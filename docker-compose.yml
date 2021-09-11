@@ -8,7 +8,6 @@ services:
       - 8501:8080
     privileged: true
     volumes:
-      - ./server:/app:cached
+      - ./:/app:cached
     tty: true
     stdin_open: true
-    command: /bin/sh
